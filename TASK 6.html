@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS Background Color</title>
+
+    <style>
+        /* Internal CSS */
+        body{
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container{
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+            width: 500px;
+        }
+
+        h1{
+            color: #2575fc;
+            margin-bottom: 15px;
+        }
+
+        p{
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Internal CSS Example</h1>
+        <p>
+            This web page uses <strong>Internal CSS</strong> to set the background
+            color of the page. The styles are defined inside the
+            <code>&lt;style&gt;</code> tag within the <code>&lt;head&gt;</code> section.
+        </p>
+    </div>
+
+</body>
+</html>
