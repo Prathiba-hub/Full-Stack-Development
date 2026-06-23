@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Message on Button Click</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI', sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#4e54c8,#8f94fb);
+        }
+
+        .container{
+            background:#fff;
+            padding:40px;
+            border-radius:20px;
+            text-align:center;
+            width:450px;
+            box-shadow:0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        h1{
+            color:#333;
+            margin-bottom:15px;
+        }
+
+        p{
+            color:#666;
+            margin-bottom:25px;
+            line-height:1.6;
+        }
+
+        button{
+            background:#4e54c8;
+            color:white;
+            border:none;
+            padding:12px 30px;
+            font-size:16px;
+            border-radius:8px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        button:hover{
+            background:#363bb3;
+            transform:translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>JavaScript Alert Box</h1>
+        <p>Click the button below to display an alert message.</p>
+
+        <button onclick="showAlert()">
+            Click Here
+        </button>
+    </div>
+
+    <script>
+        function showAlert() {
+            alert("Welcome! This alert message is displayed using JavaScript.");
+        }
+    </script>
+
+</body>
+</html>
